@@ -28,10 +28,10 @@ class App extends React.Component {
 
   render(){
     const { advice } = this.state;
-    
     return (
       <div className="app">
         <div className="card">
+          <h1 className="title">Random Quote Generator</h1>
           <h1 className="heading">
             {this.state.advice}
           </h1>
@@ -41,6 +41,14 @@ class App extends React.Component {
             </span>
           </button>
         </div>
+        <footer id="footer">
+            <p >&copy; Copyright 2022 <br />
+            Built with &#x2661; by  
+            <a href="https://github.com/makaylacodes/fs-quote-generator" target="_blank">
+             Makayla Anderson-Tucker
+        </a>
+        </p>
+        </footer>
       </div>
     );
   }
